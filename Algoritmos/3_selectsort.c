@@ -1,10 +1,11 @@
 void selectsort(int vetor[], int tam)
 {
-  int menor = 0;
+
   struct timeval inicio, fim;
   gettimeofday(&inicio, NULL);
   for (int i = 0; i < tam; i++)
   {
+    int menor = i;
     for (int j = i; j < tam; j++)
     {
       if (vetor[j] < vetor[menor])
