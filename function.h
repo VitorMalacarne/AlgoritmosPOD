@@ -3,10 +3,10 @@
 #include <sys/time.h>
 #include <unistd.h>
 
-#include "funcoes.c"
+#include "Funcoes/0_funcoes.c"
+#include "Funcoes/1_arquivo.c"
+#include "Funcoes/2_gerar.c"
 
-#include "Algoritmos/01_arquivo.c"
-#include "Algoritmos/02_gerar.c"
-
-#include "Algoritmos/11_bubblesort.c"
-#include "Algoritmos/12_insertsort.c"
+#include "Algoritmos/1_bubblesort.c"
+#include "Algoritmos/2_insertsort.c"
+#include "Algoritmos/3_insertsort.c"

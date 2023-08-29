@@ -84,6 +84,36 @@ int main(void)
                     insertsort(vetor, 1000);
                     espera();
                     break;
+                case 3:
+                    system("clear");
+                    printf("Select Sort\n");
+
+                    printf("\nVetor Aleatório:\n");
+                    lerArquivo(vetor, "Aleatorio500.txt");
+                    selectsort(vetor, 500);
+                    lerArquivo(vetor, "Aleatorio750.txt");
+                    selectsort(vetor, 750);
+                    lerArquivo(vetor, "Aleatorio1000.txt");
+                    selectsort(vetor, 1000);
+
+                    printf("\nVetor Decrescente:\n");
+                    lerArquivo(vetor, "Decrescente500.txt");
+                    selectsort(vetor, 500);
+                    lerArquivo(vetor, "Decrescente750.txt");
+                    selectsort(vetor, 750);
+                    lerArquivo(vetor, "Decrescente1000.txt");
+                    selectsort(vetor, 1000);
+
+                    printf("\nVetor Ordenado:\n");
+                    lerArquivo(vetor, "Ordenado500.txt");
+                    selectsort(vetor, 500);
+                    lerArquivo(vetor, "Ordenado750.txt");
+                    selectsort(vetor, 750);
+                    lerArquivo(vetor, "Ordenado1000.txt");
+                    selectsort(vetor, 1000);
+                    espera();
+
+                    break;
                 case 0:
                     break;
                 default:
