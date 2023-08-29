@@ -10,3 +10,4 @@
 #include "Algoritmos/1_bubblesort.c"
 #include "Algoritmos/2_insertsort.c"
 #include "Algoritmos/3_selectsort.c"
+#include "Algoritmos/4_shellsort.c"
