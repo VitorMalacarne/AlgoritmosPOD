@@ -11,3 +11,4 @@
 #include "Algoritmos/2_insertsort.c"
 #include "Algoritmos/3_selectsort.c"
 #include "Algoritmos/4_shellsort.c"
+#include "Algoritmos/5_quicksort.c"

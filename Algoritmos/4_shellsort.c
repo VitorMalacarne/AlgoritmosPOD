@@ -6,14 +6,14 @@ void shellsort(int vetor[], int tam)
   for (h = 1; h < tam; h = 3 * h + 1)
   {
     while (h > 0)
-    h = (h - 1) / 3;
-    for (i = h; i<  tam; i++)
+      h = (h - 1) / 3;
+    for (i = h; i < tam; i++)
     {
       auxiliar = vetor[i];
       j = 1;
-      while (vetor[j-h] > auxiliar)
+      while (vetor[j - h] > auxiliar)
       {
-        vetor[j] = vetor[j-h];
+        vetor[j] = vetor[j - h];
         j -= h;
         if (j < h)
         {
@@ -22,31 +22,6 @@ void shellsort(int vetor[], int tam)
       }
       vetor[j] = auxiliar;
     }
-  }
-  gettimeofday(&fim, NULL);
-  double tempo = (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;
-  printf("Tempo de Ordenação do arquivo com %d dados: %.5f\n", tam, tempo);
-}
-
-
-void selectsort(int vetor[], int tam)
-{
-
-  struct timeval inicio, fim;
-  gettimeofday(&inicio, NULL);
-  for (int i = 0; i < tam; i++)
-  {
-    int menor = i;
-    for (int j = i; j < tam; j++)
-    {
-      if (vetor[j] < vetor[menor])
-      {
-        menor = j;
-      }
-    }
-    int auxiliar = vetor[i];
-    vetor[i] = vetor[menor];
-    vetor[menor] = auxiliar;
   }
   gettimeofday(&fim, NULL);
   double tempo = (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;
