@@ -33,3 +33,10 @@ int lerInteiro()
     {
     }
       */
+
+void troca(int vetor[], int primeiraPosicao, int segundaPosicao)
+{
+  int auxiliar = vetor[primeiraPosicao];
+  vetor[primeiraPosicao] = vetor[segundaPosicao];
+  vetor[segundaPosicao] = auxiliar;
+}

@@ -18,7 +18,7 @@ int main(void)
     do
     {
         system("clear");
-        printf("ALgoritmos de ordenação disponíveis:\n1-BubbleSort\n2-InsertSort\n3-SelectSort\n4-ShellSort\n5-QuickSort\n0-Encerrar Programa!");
+        printf("ALgoritmos de ordenação disponíveis:\n1-Bubble Sort\n2-Insert Sort\n3-Select Sort\n4-Shell Sort\n5-Quick Sort Hoare\n6-Quick Sort Lomuto\n0-Encerrar Programa!");
         printf("\nEscolha a opção que desejar:");
         menu1 = lerInteiro();
         switch (menu1)
@@ -148,34 +148,64 @@ int main(void)
             break;
         case 5:
             system("clear");
-            printf("Quick Sort\n");
+            printf("Quick Sort Hoare\n");
 
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
-            quicksort(vetor, 0, 500);
+            quicksorthoare(vetor, 500);
             imprimevetor(vetor, 500);
             lerArquivo(vetor, "Aleatorio750.txt");
-            quicksort(vetor, 0, 750);
+            quicksorthoare(vetor, 750);
             lerArquivo(vetor, "Aleatorio1000.txt");
-            quicksort(vetor, 0, 1000);
+            quicksorthoare(vetor, 1000);
 
             printf("\nVetor Decrescente:\n");
             lerArquivo(vetor, "Decrescente500.txt");
-            quicksort(vetor, 0, 500);
+            quicksorthoare(vetor, 500);
             lerArquivo(vetor, "Decrescente750.txt");
-            quicksort(vetor, 0, 750);
+            quicksorthoare(vetor, 750);
             lerArquivo(vetor, "Decrescente1000.txt");
-            quicksort(vetor, 0, 1000);
+            quicksorthoare(vetor, 1000);
 
             printf("\nVetor Ordenado:\n");
             lerArquivo(vetor, "Ordenado500.txt");
-            quicksort(vetor, 0, 500);
+            quicksorthoare(vetor, 500);
             lerArquivo(vetor, "Ordenado750.txt");
-            quicksort(vetor, 0, 750);
+            quicksorthoare(vetor, 750);
             lerArquivo(vetor, "Ordenado1000.txt");
-            quicksort(vetor, 0, 1000);
+            quicksorthoare(vetor, 1000);
             espera();
 
+            break;
+        case 6:
+            system("clear");
+            printf("Quick Sort Lomuto\n");
+
+            printf("\nVetor Aleatório:\n");
+            lerArquivo(vetor, "Aleatorio500.txt");
+            quicksortlomuto(vetor, 500);
+            imprimevetor(vetor, 500);
+            lerArquivo(vetor, "Aleatorio750.txt");
+            quicksortlomuto(vetor, 750);
+            lerArquivo(vetor, "Aleatorio1000.txt");
+            quicksortlomuto(vetor, 1000);
+
+            printf("\nVetor Decrescente:\n");
+            lerArquivo(vetor, "Decrescente500.txt");
+            quicksortlomuto(vetor, 500);
+            lerArquivo(vetor, "Decrescente750.txt");
+            quicksortlomuto(vetor, 750);
+            lerArquivo(vetor, "Decrescente1000.txt");
+            quicksortlomuto(vetor, 1000);
+
+            printf("\nVetor Ordenado:\n");
+            lerArquivo(vetor, "Ordenado500.txt");
+            quicksortlomuto(vetor, 500);
+            lerArquivo(vetor, "Ordenado750.txt");
+            quicksortlomuto(vetor, 750);
+            lerArquivo(vetor, "Ordenado1000.txt");
+            quicksortlomuto(vetor, 1000);
+            espera();
             break;
         case 0:
             system("clear");
