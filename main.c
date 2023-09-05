@@ -125,6 +125,7 @@ int main(void)
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
             shellsort(vetor, 500);
+            imprimevetor(vetor, 500);
             lerArquivo(vetor, "Aleatorio750.txt");
             shellsort(vetor, 750);
             lerArquivo(vetor, "Aleatorio1000.txt");
@@ -145,6 +146,7 @@ int main(void)
             shellsort(vetor, 750);
             lerArquivo(vetor, "Ordenado1000.txt");
             shellsort(vetor, 1000);
+            espera();
             break;
         case 5:
             system("clear");
@@ -153,7 +155,7 @@ int main(void)
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
             quicksorthoare(vetor, 500);
-            imprimevetor(vetor, 500);
+
             lerArquivo(vetor, "Aleatorio750.txt");
             quicksorthoare(vetor, 750);
             lerArquivo(vetor, "Aleatorio1000.txt");
