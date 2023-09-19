@@ -41,7 +41,6 @@ void removerUltimaLinha(const char *nomeArquivo)
 
 void lerArquivo(int vetor[], const char *nomeArquivo)
 {
-
   FILE *ponteiro;
   int numero, cont = 0;
 

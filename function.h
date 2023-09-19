@@ -13,3 +13,4 @@
 #include "Algoritmos/4_shell_sort.c"
 #include "Algoritmos/5.1_quick_sort_hoare.c"
 #include "Algoritmos/5.2_quick_sort_lomuto.c"
+#include "Algoritmos/6_merge_sort.c"
