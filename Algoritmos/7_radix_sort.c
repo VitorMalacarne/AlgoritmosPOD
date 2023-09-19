@@ -1,7 +1,7 @@
 void radixSort(int vetor[], int tam){
     int base = 10, r;
     int digito = 3;//numero de digitos
-    int *B = new int[tam], *C = new int[base];
+    int B[tam], C[base];
     for(int m = 0; m < digito; m++){
         for(int i = 0; i < base; ++i) C[i] = 0;
         for(int j = 0; j < tam; ++j){
