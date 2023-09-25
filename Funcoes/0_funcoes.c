@@ -40,3 +40,21 @@ void troca(int vetor[], int primeiraPosicao, int segundaPosicao)
   vetor[primeiraPosicao] = vetor[segundaPosicao];
   vetor[segundaPosicao] = auxiliar;
 }
+
+//Função para calcular uma potenciação, porque a função pow da biblioteca math.h não estava funcionando por algum motivo desconhecido
+double potencia(double base, double expoente){
+
+    double resultado = 1.0;
+
+    if (expoente > 0) {
+        for (int i = 0; i < expoente; i++) {
+            resultado *= base;
+        }
+    } else if (expoente < 0) {
+        for (int i = 0; i > expoente; i--) {
+            resultado /= base;
+        }
+    }
+
+    return resultado;
+}

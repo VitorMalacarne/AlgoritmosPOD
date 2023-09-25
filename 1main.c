@@ -29,7 +29,7 @@ int main(void)
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
             bubblesort(vetor, 500);
-            // imprimevetor(vetor, 500);
+            imprimevetor(vetor, 500);
             lerArquivo(vetor, "Aleatorio750.txt");
             bubblesort(vetor, 750);
             // imprimevetor(vetor, 750);
