@@ -18,7 +18,15 @@ int main(void)
     do
     {
         system("clear");
-        printf("ALgoritmos de ordenação disponíveis:\n1-Bubble Sort\n2-Insert Sort\n3-Select Sort\n4-Shell Sort\n5-Quick Sort Hoare\n6-Quick Sort Lomuto\n0-Encerrar Programa!");
+        printf("ALgoritmos de ordenação disponíveis:\n"
+               "1-Bubble Sort\n"
+               "2-Insert Sort\n"
+               "3-Select Sort\n"
+               "4-Shell Sort\n"
+               "5-Quick Sort Hoare\n"
+               "6-Quick Sort Lomuto\n"
+               "7-Radix Sort\n"
+               "0-Encerrar Programa!");
         printf("\nEscolha a opção que desejar:");
         menu1 = lerInteiro();
         switch (menu1)
