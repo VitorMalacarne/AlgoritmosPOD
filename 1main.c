@@ -217,6 +217,66 @@ int main(void)
             quicksortlomuto(vetor, 1000);
             espera();
             break;
+        case 7:
+            system("clear");
+            printf("Quick Sort Lomuto\n");
+
+            printf("\nVetor Aleatório:\n");
+            lerArquivo(vetor, "Aleatorio500.txt");
+            mergesort(vetor, 500);
+            imprimevetor(vetor, 500);
+            lerArquivo(vetor, "Aleatorio750.txt");
+            mergesort(vetor, 750);
+            lerArquivo(vetor, "Aleatorio1000.txt");
+            mergesort(vetor, 1000);
+
+            printf("\nVetor Decrescente:\n");
+            lerArquivo(vetor, "Decrescente500.txt");
+            mergesort(vetor, 500);
+            lerArquivo(vetor, "Decrescente750.txt");
+            mergesort(vetor, 750);
+            lerArquivo(vetor, "Decrescente1000.txt");
+            mergesort(vetor, 1000);
+
+            printf("\nVetor Ordenado:\n");
+            lerArquivo(vetor, "Ordenado500.txt");
+            mergesort(vetor, 500);
+            lerArquivo(vetor, "Ordenado750.txt");
+            mergesort(vetor, 750);
+            lerArquivo(vetor, "Ordenado1000.txt");
+            mergesort(vetor, 1000);
+            espera();
+            break;
+        case 8:
+            system("clear");
+            printf("Quick Sort Lomuto\n");
+
+            printf("\nVetor Aleatório:\n");
+            lerArquivo(vetor, "Aleatorio500.txt");
+            radixSort(vetor, 500);
+            imprimevetor(vetor, 500);
+            lerArquivo(vetor, "Aleatorio750.txt");
+            radixSort(vetor, 750);
+            lerArquivo(vetor, "Aleatorio1000.txt");
+            radixSort(vetor, 1000);
+
+            printf("\nVetor Decrescente:\n");
+            lerArquivo(vetor, "Decrescente500.txt");
+            radixSort(vetor, 500);
+            lerArquivo(vetor, "Decrescente750.txt");
+            radixSort(vetor, 750);
+            lerArquivo(vetor, "Decrescente1000.txt");
+            radixSort(vetor, 1000);
+
+            printf("\nVetor Ordenado:\n");
+            lerArquivo(vetor, "Ordenado500.txt");
+            radixSort(vetor, 500);
+            lerArquivo(vetor, "Ordenado750.txt");
+            radixSort(vetor, 750);
+            lerArquivo(vetor, "Ordenado1000.txt");
+            radixSort(vetor, 1000);
+            espera();
+            break;
         case 0:
             system("clear");
             printf("Programa encerrado!\n");
