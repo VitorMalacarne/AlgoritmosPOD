@@ -1,15 +1,17 @@
 int particionelomuto(int vetor[], int esquerda, int direita)
 {
     int pivo = vetor[direita];
-    int i = esquerda -1;
+    int i = esquerda - 1;
 
-    for (int j = esquerda; j <= direita - 1; j++) {
-        if (vetor[j] < pivo) {
+    for (int j = esquerda; j <= direita - 1; j++)
+    {
+        if (vetor[j] < pivo)
+        {
             i++;
             troca(vetor, i, j);
         }
     }
-    troca(vetor, i+1, direita);
+    troca(vetor, i + 1, direita);
     return (i + 1);
 }
 
@@ -24,7 +26,7 @@ void quicksortlomutorecursivo(int vetor[], int esquerda, int direita)
     }
 }
 
-void quicksort(int vetor[], int tamanho)
+void quicksortlomuto(int vetor[], int tamanho)
 {
     struct timeval inicio, fim;
     gettimeofday(&inicio, NULL);

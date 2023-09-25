@@ -25,7 +25,8 @@ int main(void)
                "4-Shell Sort\n"
                "5-Quick Sort Hoare\n"
                "6-Quick Sort Lomuto\n"
-               "7-Radix Sort\n"
+               "7-Merge Sort\n"
+               "8-Radix Sort\n"
                "0-Encerrar Programa!");
         printf("\nEscolha a opção que desejar:");
         menu1 = lerInteiro();
@@ -37,7 +38,7 @@ int main(void)
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
             bubblesort(vetor, 500);
-            imprimevetor(vetor, 500);
+            // imprimevetor(vetor, 500);
             lerArquivo(vetor, "Aleatorio750.txt");
             bubblesort(vetor, 750);
             // imprimevetor(vetor, 750);
@@ -194,7 +195,7 @@ int main(void)
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
             quicksortlomuto(vetor, 500);
-            imprimevetor(vetor, 500);
+            // imprimevetor(vetor, 500);
             lerArquivo(vetor, "Aleatorio750.txt");
             quicksortlomuto(vetor, 750);
             lerArquivo(vetor, "Aleatorio1000.txt");
@@ -224,7 +225,7 @@ int main(void)
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
             mergesort(vetor, 500);
-            imprimevetor(vetor, 500);
+            // imprimevetor(vetor, 500);
             lerArquivo(vetor, "Aleatorio750.txt");
             mergesort(vetor, 750);
             lerArquivo(vetor, "Aleatorio1000.txt");
