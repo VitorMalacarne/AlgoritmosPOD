@@ -219,7 +219,7 @@ int main(void)
             break;
         case 7:
             system("clear");
-            printf("Quick Sort Lomuto\n");
+            printf("Merge Sort\n");
 
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
@@ -249,7 +249,7 @@ int main(void)
             break;
         case 8:
             system("clear");
-            printf("Quick Sort Lomuto\n");
+            printf("Radix Sort\n");
 
             printf("\nVetor Aleatório:\n");
             lerArquivo(vetor, "Aleatorio500.txt");
