@@ -1,4 +1,5 @@
-int criaArquivos(int tam) {
+#include "arquivos.h"
+int gerarArquivos(int tam) {
     int si = 1;
     char nomes[3][10] = {"Ordenado", "Invertido", "Aleatorio"};
     for (int x = 0; x < 3; x++) {

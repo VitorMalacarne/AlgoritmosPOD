@@ -1,3 +1,4 @@
+#include "arquivos.h"
 /*Remove a última linha, em branco, do arquivo para evitar problemas
  */
 

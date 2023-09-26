@@ -1,4 +1,4 @@
-
+#include "arquivos.h"
 void lerArquivo(int vetor[], const char *nomeArquivo)
 {
     FILE *ponteiro;

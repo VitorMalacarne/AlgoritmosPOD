@@ -1,3 +1,4 @@
+#include "algoritmos.h"
 void insertsort(int vetor[], int tam)
 {
   struct timeval inicio, fim;

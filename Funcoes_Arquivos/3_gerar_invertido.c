@@ -1,3 +1,4 @@
+#include "arquivos.h"
 void gerarArquivoDecrescente(const char *nomeArquivo, int tamanho)
 {
     if (verificaExistencia(nomeArquivo) == 0)

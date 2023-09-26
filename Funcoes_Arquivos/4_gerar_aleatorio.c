@@ -1,8 +1,4 @@
-
-
-
-
-
+#include "arquivos.h"
 
 void gerarArquivoAleatorio(const char *nomeArquivo, int tamanho)
 {

@@ -1,4 +1,4 @@
-
+#include "algoritmos.h"
 void bubblesort(int vetor[], int tam)
 {
   struct timeval inicio, fim;

@@ -1,4 +1,5 @@
-#include "funcao.h"
+#include "header.h"
+
 
 int main(void){
     //Verificar a existência de arquivos, se estes não existem, então cria-los

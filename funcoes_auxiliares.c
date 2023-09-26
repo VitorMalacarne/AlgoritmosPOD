@@ -1,3 +1,4 @@
+#include "header.h"
 /*Funções auxiliares que permitem melhorar o funcionamento do programa*/
 
 void espera()

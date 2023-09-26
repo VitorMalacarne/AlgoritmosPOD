@@ -1,4 +1,4 @@
-#include <math.h>
+#include "algoritmos.h"
 void radixSort(int vetor[], int tamanho)
 {
     struct timeval inicio, fim;

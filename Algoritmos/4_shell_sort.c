@@ -1,3 +1,4 @@
+#include "algoritmos.h"
 void shellsort(int vetor[], int tam)
 {
   struct timeval inicio, fim;
