@@ -17,3 +17,4 @@
 #include "Algoritmos/5.2_quick_sort_lomuto.c"
 #include "Algoritmos/6_merge_sort.c"
 #include "Algoritmos/7_radix_sort.c"
+#include "Algoritmos/8_heap_sort.c"
