@@ -1,0 +1,8 @@
+//
+// Created by vitorhwm on 26/09/23.
+//
+
+#ifndef ALGORITMOSPOD_ALGORITMOS_H
+#define ALGORITMOSPOD_ALGORITMOS_H
+
+#endif //ALGORITMOSPOD_ALGORITMOS_H

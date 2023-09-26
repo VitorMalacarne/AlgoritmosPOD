@@ -5,9 +5,12 @@
 #include <unistd.h>
 #include <math.h>
 
+typedef int (*Func)(int[], int, int);
+
 #include "Funcoes/0_funcoes.c"
 #include "Funcoes/1_arquivo.c"
-#include "Funcoes/2_gerar.c"
+#include "Arquivos/0_gerar.c"
+#include "Funcoes/3_tamanhoUI.c"
 
 #include "Algoritmos/1_bubble_sort.c"
 #include "Algoritmos/2_insert_sort.c"
