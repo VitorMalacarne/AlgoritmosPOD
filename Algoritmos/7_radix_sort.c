@@ -1,5 +1,5 @@
-#include "algoritmos.h"
-void radixSort(int vetor[], int tamanho)
+
+void radixSort(int vetor[], int tamanho, Func funcaoAuxiliar)
 {
     struct timeval inicio, fim;
     gettimeofday(&inicio, NULL);

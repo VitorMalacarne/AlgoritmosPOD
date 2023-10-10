@@ -1,5 +1,5 @@
-#include "algoritmos.h"
-void shellsort(int vetor[], int tam)
+
+void shellSort(int vetor[], int tam, Func funcaoAuxiliar)
 {
   struct timeval inicio, fim;
   gettimeofday(&inicio, NULL);

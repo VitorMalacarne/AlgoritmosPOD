@@ -1,5 +1,5 @@
-#include "algoritmos.h"
-void insertsort(int vetor[], int tam)
+
+void insertSort(int vetor[], int tam, Func funcaoAuxiliar)
 {
   struct timeval inicio, fim;
   gettimeofday(&inicio, NULL);

@@ -1,4 +1,4 @@
-#include "algoritmos.h"
+
 int hoare(int vetor[], int esquerda, int direita)
 {
   int pivo = vetor[esquerda], up = direita, down = esquerda;

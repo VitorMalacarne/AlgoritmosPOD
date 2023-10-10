@@ -1,5 +1,5 @@
-#include "algoritmos.h"
-void bubblesort(int vetor[], int tam)
+
+void bubbleSort(int vetor[], int tam, Func funcaoAuxiliar)
 {
   struct timeval inicio, fim;
   gettimeofday(&inicio, NULL);
@@ -17,5 +17,5 @@ void bubblesort(int vetor[], int tam)
   }
   gettimeofday(&fim, NULL);
   double tempo = (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;
-  printf("Tempo de Ordenação do arquivo com %d dados: %.5f\n", tam, tempo);
+  printf("\nTempo de Ordenação do arquivo com %d dados: %.5f\n", tam, tempo);
 }

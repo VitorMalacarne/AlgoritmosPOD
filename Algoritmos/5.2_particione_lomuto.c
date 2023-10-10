@@ -1,4 +1,4 @@
-#include "algoritmos.h"
+
 int lomuto(int vetor[], int esquerda, int direita)
 {
     int pivo = vetor[direita];

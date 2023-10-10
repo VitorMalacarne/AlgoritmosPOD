@@ -1,4 +1,4 @@
-#include "arquivos.h"
+
 void lerArquivo(int vetor[], const char *nomeArquivo)
 {
     FILE *ponteiro;
@@ -7,7 +7,7 @@ void lerArquivo(int vetor[], const char *nomeArquivo)
     ponteiro = fopen(nomeArquivo, "r");
     if (ponteiro == NULL)
     {
-        printf("Não foi possível abrir o arquivo selecionado.");
+        printf("Não foi possível abrir o arquivo %s.", nomeArquivo);
         return;
     }
 

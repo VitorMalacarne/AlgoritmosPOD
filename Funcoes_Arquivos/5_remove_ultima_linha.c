@@ -1,4 +1,4 @@
-#include "arquivos.h"
+
 /*Remove a última linha, em branco, do arquivo para evitar problemas
  */
 
@@ -7,7 +7,7 @@ void removerUltimaLinha(const char *nomeArquivo)
     FILE *ponteiro = fopen(nomeArquivo, "r+");
     if (ponteiro == NULL)
     {
-        printf("Não foi possível abrir o arquivo para remoção da última linha!\n");
+        printf("Não foi possível abrir o arquivo %s para remoção da última linha!\n", nomeArquivo);
         exit(1);
     }
 

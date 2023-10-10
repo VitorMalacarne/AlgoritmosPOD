@@ -1,4 +1,6 @@
-#include "funcao.h"
+#include "header.h"
+#include "Algoritmos/algoritmos.h"
+#include "Funcoes_Arquivos/arquivos.h"
 
 int main(void)
 {

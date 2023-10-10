@@ -1,4 +1,4 @@
-#include "algoritmos.h"
+
 
 void merge(int vetor[], int esquerda, int meio, int direita)
 {

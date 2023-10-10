@@ -1,5 +1,5 @@
-#include "algoritmos.h"
-void selectsort(int vetor[], int tam)
+
+void selectSort(int vetor[], int tam, Func funcaoAuxiliar)
 {
 
   struct timeval inicio, fim;
