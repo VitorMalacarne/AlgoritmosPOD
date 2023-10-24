@@ -1,5 +1,5 @@
 
-void selectSort(int vetor[], int tam, Func funcaoAuxiliar)
+double selectSort(int vetor[], int tam, Func funcaoAuxiliar)
 {
 
   struct timeval inicio, fim;
@@ -19,6 +19,5 @@ void selectSort(int vetor[], int tam, Func funcaoAuxiliar)
     vetor[menor] = auxiliar;
   }
   gettimeofday(&fim, NULL);
-  double tempo = (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;
-  printf("Tempo de Ordenação do arquivo com %d dados: %.5f\n", tam, tempo);
+    return (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;;
 }

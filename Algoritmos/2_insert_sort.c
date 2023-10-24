@@ -1,5 +1,5 @@
 
-void insertSort(int vetor[], int tam, Func funcaoAuxiliar)
+double insertSort(int vetor[], int tam, Func funcaoAuxiliar)
 {
   struct timeval inicio, fim;
   gettimeofday(&inicio, NULL);
@@ -15,6 +15,5 @@ void insertSort(int vetor[], int tam, Func funcaoAuxiliar)
     }
   }
   gettimeofday(&fim, NULL);
-  double tempo = (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;
-  printf("Tempo de Ordenação do arquivo com %d dados: %.5f\n", tam, tempo);
+  return (fim.tv_sec - inicio.tv_sec) + (fim.tv_usec - inicio.tv_usec) / 1000000.0;;
 }

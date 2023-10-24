@@ -10,7 +10,7 @@ int main(void){
      * Caso a variável esteja definida como 1000, o programa executará
      * com os arquivos de tamanho solicitado pelo professor, sendo 500.000, 750.000 e 1.000.000
      * */
-    int ordemDeGrandeza = 1000;
+    int ordemDeGrandeza = 1;
     system("clear");
     printf("\t\tBem Vindo ao progama para testes de algoritmos de ordenação de dados!\n");
 

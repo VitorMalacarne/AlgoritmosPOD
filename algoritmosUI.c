@@ -1,6 +1,8 @@
 void algoritmosUI(int grandeza, const char *nomeAlgoritmo, Alg algoritmo, Func auxiliar){
-    int menu, vetor[500000];
-    char tipoArquivo[3][10] = {"Ordenado", "Invertido", "Aleatorio"};
+    int menu, *vetor;
+    double tempo;
+    char nomeArquivo[40], tipoArquivo[3][10] = {"Ordenado", "Invertido", "Aleatorio"};
+
     do{
         system("clear");
         printf("\n\t\tAlgoritmo de Ordenação %s\n", nomeAlgoritmo);
@@ -9,23 +11,63 @@ void algoritmosUI(int grandeza, const char *nomeAlgoritmo, Alg algoritmo, Func a
                "\t2-%d números\n"
                "\t3-%d números\n"
                "\t4-Todos\n"
-               "\t0-Voltar ao menu principal!", 500*grandeza, 750*grandeza, 1000*grandeza);
+               "\t0-Voltar ao menu principal!", 500 * grandeza, 750 * grandeza, 1000 * grandeza);
         printf("\nEscolha a opção que desejar:");
         menu = lerInteiro();
         espera();
         switch (menu) {
             case 1:
-                 //malloc((500 * grandeza) * sizeof(int));
-                /*
+                vetor = malloc((grandeza * 500) * sizeof(int));
                 for (int j = 0; j < 3; j++) {
-                    char nomeArquivo[40];
+
                     sprintf(nomeArquivo, "Arquivos/%s%d.txt", tipoArquivo[j], 500 * grandeza);
                     lerArquivo(vetor, nomeArquivo);
-                }*/
+                    tempo = algoritmo(vetor, 500 * grandeza, auxiliar);
+                    relatorio(grandeza*500, tempo, nomeAlgoritmo,tipoArquivo[j]);
 
-                lerArquivo(vetor, "Arquivos/aleatorio500000.txt");
-                algoritmo(vetor,500*grandeza,auxiliar);
+                }
+                free(vetor);
+                break;
+            case 2:
+                vetor = malloc((grandeza * 750) * sizeof(int));
 
+                for (int j = 0; j < 3; j++) {
+
+                    sprintf(nomeArquivo, "Arquivos/%s%d.txt", tipoArquivo[j], 750 * grandeza);
+                    lerArquivo(vetor, nomeArquivo);
+                    tempo = algoritmo(vetor, 750 * grandeza, auxiliar);
+                    relatorio(grandeza*750, tempo, nomeAlgoritmo,tipoArquivo[j]);
+                }
+
+                free(vetor);
+                break;
+            case 3:
+                vetor = malloc((grandeza * 1000) * sizeof(int));
+
+                for (int j = 0; j < 3; j++) {
+
+                    sprintf(nomeArquivo, "Arquivos/%s%d.txt", tipoArquivo[j], 1000 * grandeza);
+                    lerArquivo(vetor, nomeArquivo);
+                    tempo = algoritmo(vetor, 1000 * grandeza, auxiliar);
+                    relatorio(grandeza*1000, tempo, nomeAlgoritmo,tipoArquivo[j]);
+
+                }
+
+                free(vetor);
+                break;
+            case 4:
+                for(int i = 500; i <= 1000; i += 250) {
+                    vetor = malloc((grandeza * i) * sizeof(int));
+                    for (int j = 0; j < 3; j++) {
+
+                        sprintf(nomeArquivo, "Arquivos/%s%d.txt", tipoArquivo[j], grandeza * i);
+                        lerArquivo(vetor, nomeArquivo);
+                        tempo = algoritmo(vetor, i * grandeza, auxiliar);
+                        relatorio(grandeza*i, tempo, nomeAlgoritmo,tipoArquivo[j]);
+                    }
+                    free(vetor);
+                }
+                break;
             default:
                 printf("Opção Inválida");
                 espera();

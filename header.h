@@ -11,7 +11,7 @@
     #include <string.h>
 
 typedef int (*Func)(int[], int, int);
-typedef void (*Alg)(int[], int, Func);
+typedef double (*Alg)(int[], int, Func);
 
     #include "funcoes_auxiliares.c"
 
@@ -34,6 +34,7 @@ typedef void (*Alg)(int[], int, Func);
     #include "Funcoes_Arquivos/4_gerar_aleatorio.c"
     #include "Funcoes_Arquivos/0_verificarArquivos.c"
     #include "Funcoes_Arquivos/6_ler_arquivo.c"
+    #include "Funcoes_Arquivos/7_relatorio.c"
 
     #include "algoritmosUI.c"
 #endif //ALGORITMOSPOD_HEADER_H
