@@ -7,7 +7,7 @@ void removerUltimaLinha(const char *nomeArquivo)
     FILE *ponteiro = fopen(nomeArquivo, "r+");
     if (ponteiro == NULL)
     {
-        printf("Não foi possível abrir o arquivo %s para remoção da última linha!\n", nomeArquivo);
+        printf(RED"Não foi possível abrir o arquivo %s para remoção da última linha!\n", nomeArquivo);
         exit(1);
     }
 

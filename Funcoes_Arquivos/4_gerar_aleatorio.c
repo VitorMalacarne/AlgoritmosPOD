@@ -4,7 +4,7 @@ void gerarArquivoAleatorio(const char *nomeArquivo, int tamanho)
 {
     if (verificaExistencia(nomeArquivo) == 0)
     {
-        printf("\nArquivo %s já existe! Não foi criado um novo arquivo", nomeArquivo);
+        printf(YEL"\nArquivo %s já existe! Não foi criado um novo arquivo", nomeArquivo);
         return;
     }
 
@@ -12,7 +12,7 @@ void gerarArquivoAleatorio(const char *nomeArquivo, int tamanho)
     ponteiro = fopen(nomeArquivo, "w");
     if (ponteiro == NULL)
     {
-        printf("Não foi possível criar o arquivo %s!\n", nomeArquivo);
+        printf(RED"Não foi possível criar o arquivo %s!\n", nomeArquivo);
         exit(1);
     }
 
@@ -27,8 +27,8 @@ void gerarArquivoAleatorio(const char *nomeArquivo, int tamanho)
     int *numeros = malloc((tamanho + 1) * sizeof(int)); // Tamanho aumentado em uma linha
     if (numeros == NULL)
     {
-        printf("Erro de alocação de memória.\n");
-        printf("Não foi possível criar o arquivo %s!\n", nomeArquivo);
+        printf(RED"Erro de alocação de memória.\n");
+        printf(RED"Não foi possível criar o arquivo %s!\n", nomeArquivo);
         fclose(ponteiro);
         exit(1);
     }
@@ -54,5 +54,5 @@ void gerarArquivoAleatorio(const char *nomeArquivo, int tamanho)
     free(numeros);
     fclose(ponteiro);
     removerUltimaLinha(nomeArquivo); // Remove a última linha do arquivo
-    printf("\nArquivo %s gerado!.", nomeArquivo);
+    printf(GRN"\nArquivo %s gerado!.", nomeArquivo);
 }

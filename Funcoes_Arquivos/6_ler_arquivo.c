@@ -7,7 +7,7 @@ void lerArquivo(int vetor[], const char *nomeArquivo)
     ponteiro = fopen(nomeArquivo, "r");
     if (ponteiro == NULL)
     {
-        printf("Não foi possível abrir o arquivo %s.", nomeArquivo);
+        printf(RED"Não foi possível abrir o arquivo %s.", nomeArquivo);
         return;
     }
 

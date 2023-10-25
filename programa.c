@@ -10,21 +10,21 @@ int main(void){
      * Caso a variável esteja definida como 1000, o programa executará
      * com os arquivos de tamanho solicitado pelo professor, sendo 500.000, 750.000 e 1.000.000
      * */
-    int ordemDeGrandeza = 1;
+    int ordemDeGrandeza = 10;
     system("clear");
-    printf("\t\tBem Vindo ao progama para testes de algoritmos de ordenação de dados!\n");
+    printf(BLU"\t\tBem Vindo ao progama para testes de algoritmos de ordenação de dados!\n");
 
     //Verificar a existência de arquivos, se estes não existem, então cria-los
-    printf("\nVerificando a existêcia de arquivos...\n");
+    printf(YEL"\nVerificando a existêcia de arquivos...\n");
     verificarArquivos(ordemDeGrandeza);
-    printf("\n\nArquivos verificados com êxito!");
+    printf(GRN"\n\nArquivos verificados com êxito!");
     espera();
 
     //Menu para selecionar qual algoritmo deseja utilizar
     int menu = 0;
     do{
         system("clear");
-        printf("\n\t\tTestar algoritmos de ordenação de dados");
+        printf(BLU"\n\t\tTestar algoritmos de ordenação de dados");
         printf("\nAgoritmos de ordenação disponíveis:\n"
                "\t1-Bubble Sort\n"
                "\t2-Insert Sort\n"
@@ -35,6 +35,7 @@ int main(void){
                "\t7-Merge Sort\n"
                "\t8-Radix Sort\n"
                "\t9-Heap Sort\n"
+               "\t10-Todos os algoritmos\n"
                "\t0-Encerrar Programa!");
         printf("\nEscolha a opção que desejar:");
         menu = lerInteiro();
@@ -66,13 +67,16 @@ int main(void){
             case 9:
                 algoritmosUI(ordemDeGrandeza, "Heap Sort", heapSort, NULL);
                 break;
+            case 10:{
+                todosAlgoritmos(ordemDeGrandeza);
+                break;}
             case 0:
                 system("clear");
-                printf("Programa encerrado!\n");
+                printf(YEL"Programa encerrado!\n");
                 exit(0);
             default:
                 system("clear");
-                printf("\nOpção inválida. Digite apenas os números 0 até 8");
+                printf(YEL"\nOpção inválida. Digite apenas os números 0 até 8");
                 espera();
                 break;
         }

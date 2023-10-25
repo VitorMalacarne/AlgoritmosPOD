@@ -18,7 +18,7 @@ void verificarArquivos(int tamanho) {
                         break;
                 }
             }else{
-                printf("\nArquivo %s com %d elementos OK!", tipoArquivo[j], i*tamanho);
+                printf(GRN"\nArquivo %s com %d elementos OK!", tipoArquivo[j], i*tamanho);
             }
         }
     }

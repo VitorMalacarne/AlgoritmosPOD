@@ -9,7 +9,10 @@
     #include <unistd.h>
     #include <math.h>
     #include <string.h>
-
+#define GRN "\e[0;32m"
+#define YEL "\e[0;33m"
+#define RED "\e[0;31m"
+#define BLU "\e[0;34m"
 typedef int (*Func)(int[], int, int);
 typedef double (*Alg)(int[], int, Func);
 
@@ -37,4 +40,5 @@ typedef double (*Alg)(int[], int, Func);
     #include "Funcoes_Arquivos/7_relatorio.c"
 
     #include "algoritmosUI.c"
+    #include "todos_algoritmos.c"
 #endif //ALGORITMOSPOD_HEADER_H

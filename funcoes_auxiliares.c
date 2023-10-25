@@ -4,7 +4,7 @@
 void espera()
 {
   // Aguarda o usuário pressionar algum caracter(tecla enter) para prosseguir
-  printf("\n\nAperte ENTER para continuar!");
+  printf(YEL"\n\nAperte ENTER para continuar!");
   setbuf(stdin, NULL);
   getchar();
   setbuf(stdin, NULL);
@@ -23,7 +23,7 @@ int lerInteiro()
   int numero;
   while (scanf("%d", &numero) == 0)
   {
-    printf("\nDigite apenas um número inteiro e positivo:");
+    printf(YEL"\nDigite apenas um número inteiro e positivo:");
     setbuf(stdin, NULL);
   }
   return numero;
